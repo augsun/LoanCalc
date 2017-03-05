@@ -14,7 +14,7 @@
         <scene sceneID="10p-wa-gjS">
             <objects>
                 <navigationController id="Xwj-La-hE7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4OY-0V-p8K">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4OY-0V-p8K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -29,10 +29,9 @@
             </objects>
             <point key="canvasLocation" x="-556" y="144"/>
         </scene>
-        <!--LoanCalc-->
+        <!--LoanCalc ©2017 CoderSun-->
         <scene sceneID="ky0-mB-Tkz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ylu-Cy-PBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Vyg-cI-DWC" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h2H-JZ-0X3"/>
@@ -407,7 +406,7 @@
                             <constraint firstItem="Zff-Yi-tOe" firstAttribute="leading" secondItem="3fx-yW-THz" secondAttribute="leading" id="x3d-b5-fBX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="LoanCalc" id="ZtO-RT-qzL"/>
+                    <navigationItem key="navigationItem" title="LoanCalc ©2017 CoderSun" id="ZtO-RT-qzL"/>
                     <connections>
                         <outlet property="amountTextField" destination="fSL-eT-SXY" id="UGn-nO-2SF"/>
                         <outlet property="dueTimeLabel" destination="cUs-P7-N6h" id="Sj5-OS-3cT"/>
@@ -420,6 +419,7 @@
                         <outlet property="totalPaymentLabel" destination="Xx1-1C-1W1" id="GEU-jZ-BdW"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylu-Cy-PBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="255" y="91"/>
         </scene>
