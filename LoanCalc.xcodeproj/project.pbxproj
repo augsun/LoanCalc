@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8CE8E1E1E6BCAE90067E0E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E1D1E6BCAE90067E0E1 /* main.m */; };
+		C8CE8E211E6BCAE90067E0E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E201E6BCAE90067E0E1 /* AppDelegate.m */; };
+		C8CE8E271E6BCAE90067E0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CE8E251E6BCAE90067E0E1 /* Main.storyboard */; };
+		C8CE8E291E6BCAE90067E0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8CE8E281E6BCAE90067E0E1 /* Assets.xcassets */; };
+		C8CE8E2C1E6BCAE90067E0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8CE8E2A1E6BCAE90067E0E1 /* LaunchScreen.storyboard */; };
+		C8CE8E371E6BCAE90067E0E1 /* LoanCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E361E6BCAE90067E0E1 /* LoanCalcTests.m */; };
+		C8CE8E421E6BCAE90067E0E1 /* LoanCalcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E411E6BCAE90067E0E1 /* LoanCalcUITests.m */; };
+		C8CE8E531E6BCB310067E0E1 /* JXLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E521E6BCB310067E0E1 /* JXLoanModel.m */; };
+		C8CE8E571E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E551E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.m */; };
+		C8CE8E581E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CE8E561E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.xib */; };
+		C8CE8E611E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E5F1E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.m */; };
+		C8CE8E621E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CE8E601E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.xib */; };
+		C8CE8E661E6BEB940067E0E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CE8E651E6BEB940067E0E1 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8CE8E331E6BCAE90067E0E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8CE8E111E6BCAE90067E0E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8CE8E181E6BCAE90067E0E1;
+			remoteInfo = LoanCalc;
+		};
+		C8CE8E3E1E6BCAE90067E0E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8CE8E111E6BCAE90067E0E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8CE8E181E6BCAE90067E0E1;
+			remoteInfo = LoanCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8CE8E191E6BCAE90067E0E1 /* LoanCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CE8E1D1E6BCAE90067E0E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8CE8E1F1E6BCAE90067E0E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C8CE8E201E6BCAE90067E0E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C8CE8E261E6BCAE90067E0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8CE8E281E6BCAE90067E0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8CE8E2B1E6BCAE90067E0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8CE8E2D1E6BCAE90067E0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CE8E321E6BCAE90067E0E1 /* LoanCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CE8E361E6BCAE90067E0E1 /* LoanCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanCalcTests.m; sourceTree = "<group>"; };
+		C8CE8E381E6BCAE90067E0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CE8E3D1E6BCAE90067E0E1 /* LoanCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CE8E411E6BCAE90067E0E1 /* LoanCalcUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanCalcUITests.m; sourceTree = "<group>"; };
+		C8CE8E431E6BCAE90067E0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CE8E511E6BCB310067E0E1 /* JXLoanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLoanModel.h; sourceTree = "<group>"; };
+		C8CE8E521E6BCB310067E0E1 /* JXLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXLoanModel.m; sourceTree = "<group>"; };
+		C8CE8E541E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLoanEveryMonthPayCell.h; sourceTree = "<group>"; };
+		C8CE8E551E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXLoanEveryMonthPayCell.m; sourceTree = "<group>"; };
+		C8CE8E561E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLoanEveryMonthPayCell.xib; sourceTree = "<group>"; };
+		C8CE8E5E1E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXLoanDueTimeSelectView.h; sourceTree = "<group>"; };
+		C8CE8E5F1E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXLoanDueTimeSelectView.m; sourceTree = "<group>"; };
+		C8CE8E601E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXLoanDueTimeSelectView.xib; sourceTree = "<group>"; };
+		C8CE8E641E6BEB940067E0E1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C8CE8E651E6BEB940067E0E1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8CE8E161E6BCAE90067E0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CE8E2F1E6BCAE90067E0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CE8E3A1E6BCAE90067E0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8CE8E101E6BCAE90067E0E1 = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E1B1E6BCAE90067E0E1 /* LoanCalc */,
+				C8CE8E351E6BCAE90067E0E1 /* LoanCalcTests */,
+				C8CE8E401E6BCAE90067E0E1 /* LoanCalcUITests */,
+				C8CE8E1A1E6BCAE90067E0E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8CE8E1A1E6BCAE90067E0E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E191E6BCAE90067E0E1 /* LoanCalc.app */,
+				C8CE8E321E6BCAE90067E0E1 /* LoanCalcTests.xctest */,
+				C8CE8E3D1E6BCAE90067E0E1 /* LoanCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8CE8E1B1E6BCAE90067E0E1 /* LoanCalc */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E1F1E6BCAE90067E0E1 /* AppDelegate.h */,
+				C8CE8E201E6BCAE90067E0E1 /* AppDelegate.m */,
+				C8CE8E4F1E6BCB1F0067E0E1 /* Model */,
+				C8CE8E501E6BCB1F0067E0E1 /* View */,
+				C8CE8E631E6BEB940067E0E1 /* Controller */,
+				C8CE8E251E6BCAE90067E0E1 /* Main.storyboard */,
+				C8CE8E281E6BCAE90067E0E1 /* Assets.xcassets */,
+				C8CE8E2A1E6BCAE90067E0E1 /* LaunchScreen.storyboard */,
+				C8CE8E2D1E6BCAE90067E0E1 /* Info.plist */,
+				C8CE8E1C1E6BCAE90067E0E1 /* Supporting Files */,
+			);
+			path = LoanCalc;
+			sourceTree = "<group>";
+		};
+		C8CE8E1C1E6BCAE90067E0E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E1D1E6BCAE90067E0E1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8CE8E351E6BCAE90067E0E1 /* LoanCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E361E6BCAE90067E0E1 /* LoanCalcTests.m */,
+				C8CE8E381E6BCAE90067E0E1 /* Info.plist */,
+			);
+			path = LoanCalcTests;
+			sourceTree = "<group>";
+		};
+		C8CE8E401E6BCAE90067E0E1 /* LoanCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E411E6BCAE90067E0E1 /* LoanCalcUITests.m */,
+				C8CE8E431E6BCAE90067E0E1 /* Info.plist */,
+			);
+			path = LoanCalcUITests;
+			sourceTree = "<group>";
+		};
+		C8CE8E4F1E6BCB1F0067E0E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E511E6BCB310067E0E1 /* JXLoanModel.h */,
+				C8CE8E521E6BCB310067E0E1 /* JXLoanModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8CE8E501E6BCB1F0067E0E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E541E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.h */,
+				C8CE8E551E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.m */,
+				C8CE8E561E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.xib */,
+				C8CE8E5E1E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.h */,
+				C8CE8E5F1E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.m */,
+				C8CE8E601E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8CE8E631E6BEB940067E0E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8CE8E641E6BEB940067E0E1 /* ViewController.h */,
+				C8CE8E651E6BEB940067E0E1 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8CE8E181E6BCAE90067E0E1 /* LoanCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CE8E461E6BCAE90067E0E1 /* Build configuration list for PBXNativeTarget "LoanCalc" */;
+			buildPhases = (
+				C8CE8E151E6BCAE90067E0E1 /* Sources */,
+				C8CE8E161E6BCAE90067E0E1 /* Frameworks */,
+				C8CE8E171E6BCAE90067E0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoanCalc;
+			productName = LoanCalc;
+			productReference = C8CE8E191E6BCAE90067E0E1 /* LoanCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8CE8E311E6BCAE90067E0E1 /* LoanCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CE8E491E6BCAE90067E0E1 /* Build configuration list for PBXNativeTarget "LoanCalcTests" */;
+			buildPhases = (
+				C8CE8E2E1E6BCAE90067E0E1 /* Sources */,
+				C8CE8E2F1E6BCAE90067E0E1 /* Frameworks */,
+				C8CE8E301E6BCAE90067E0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8CE8E341E6BCAE90067E0E1 /* PBXTargetDependency */,
+			);
+			name = LoanCalcTests;
+			productName = LoanCalcTests;
+			productReference = C8CE8E321E6BCAE90067E0E1 /* LoanCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8CE8E3C1E6BCAE90067E0E1 /* LoanCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8CE8E4C1E6BCAE90067E0E1 /* Build configuration list for PBXNativeTarget "LoanCalcUITests" */;
+			buildPhases = (
+				C8CE8E391E6BCAE90067E0E1 /* Sources */,
+				C8CE8E3A1E6BCAE90067E0E1 /* Frameworks */,
+				C8CE8E3B1E6BCAE90067E0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8CE8E3F1E6BCAE90067E0E1 /* PBXTargetDependency */,
+			);
+			name = LoanCalcUITests;
+			productName = LoanCalcUITests;
+			productReference = C8CE8E3D1E6BCAE90067E0E1 /* LoanCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8CE8E111E6BCAE90067E0E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = sun;
+				TargetAttributes = {
+					C8CE8E181E6BCAE90067E0E1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9W9Y3C66TM;
+						ProvisioningStyle = Manual;
+					};
+					C8CE8E311E6BCAE90067E0E1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C8CE8E181E6BCAE90067E0E1;
+					};
+					C8CE8E3C1E6BCAE90067E0E1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C8CE8E181E6BCAE90067E0E1;
+					};
+				};
+			};
+			buildConfigurationList = C8CE8E141E6BCAE90067E0E1 /* Build configuration list for PBXProject "LoanCalc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8CE8E101E6BCAE90067E0E1;
+			productRefGroup = C8CE8E1A1E6BCAE90067E0E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8CE8E181E6BCAE90067E0E1 /* LoanCalc */,
+				C8CE8E311E6BCAE90067E0E1 /* LoanCalcTests */,
+				C8CE8E3C1E6BCAE90067E0E1 /* LoanCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8CE8E171E6BCAE90067E0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CE8E2C1E6BCAE90067E0E1 /* LaunchScreen.storyboard in Resources */,
+				C8CE8E291E6BCAE90067E0E1 /* Assets.xcassets in Resources */,
+				C8CE8E271E6BCAE90067E0E1 /* Main.storyboard in Resources */,
+				C8CE8E621E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.xib in Resources */,
+				C8CE8E581E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CE8E301E6BCAE90067E0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CE8E3B1E6BCAE90067E0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8CE8E151E6BCAE90067E0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CE8E661E6BEB940067E0E1 /* ViewController.m in Sources */,
+				C8CE8E611E6BEAC70067E0E1 /* JXLoanDueTimeSelectView.m in Sources */,
+				C8CE8E571E6BCB580067E0E1 /* JXLoanEveryMonthPayCell.m in Sources */,
+				C8CE8E531E6BCB310067E0E1 /* JXLoanModel.m in Sources */,
+				C8CE8E211E6BCAE90067E0E1 /* AppDelegate.m in Sources */,
+				C8CE8E1E1E6BCAE90067E0E1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CE8E2E1E6BCAE90067E0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CE8E371E6BCAE90067E0E1 /* LoanCalcTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CE8E391E6BCAE90067E0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CE8E421E6BCAE90067E0E1 /* LoanCalcUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8CE8E341E6BCAE90067E0E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8CE8E181E6BCAE90067E0E1 /* LoanCalc */;
+			targetProxy = C8CE8E331E6BCAE90067E0E1 /* PBXContainerItemProxy */;
+		};
+		C8CE8E3F1E6BCAE90067E0E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8CE8E181E6BCAE90067E0E1 /* LoanCalc */;
+			targetProxy = C8CE8E3E1E6BCAE90067E0E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8CE8E251E6BCAE90067E0E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8CE8E261E6BCAE90067E0E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8CE8E2A1E6BCAE90067E0E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8CE8E2B1E6BCAE90067E0E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8CE8E441E6BCAE90067E0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C8CE8E451E6BCAE90067E0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8CE8E471E6BCAE90067E0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9W9Y3C66TM;
+				INFOPLIST_FILE = LoanCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crland.LoanCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3b9f9fc2-0619-49d4-b6de-410f0a85bf35";
+				PROVISIONING_PROFILE_SPECIFIER = prov_wildcard;
+			};
+			name = Debug;
+		};
+		C8CE8E481E6BCAE90067E0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LoanCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crland.LoanCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C8CE8E4A1E6BCAE90067E0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoanCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.LoanCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoanCalc.app/LoanCalc";
+			};
+			name = Debug;
+		};
+		C8CE8E4B1E6BCAE90067E0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoanCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.LoanCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoanCalc.app/LoanCalc";
+			};
+			name = Release;
+		};
+		C8CE8E4D1E6BCAE90067E0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoanCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.LoanCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoanCalc;
+			};
+			name = Debug;
+		};
+		C8CE8E4E1E6BCAE90067E0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoanCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.LoanCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoanCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8CE8E141E6BCAE90067E0E1 /* Build configuration list for PBXProject "LoanCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CE8E441E6BCAE90067E0E1 /* Debug */,
+				C8CE8E451E6BCAE90067E0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CE8E461E6BCAE90067E0E1 /* Build configuration list for PBXNativeTarget "LoanCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CE8E471E6BCAE90067E0E1 /* Debug */,
+				C8CE8E481E6BCAE90067E0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CE8E491E6BCAE90067E0E1 /* Build configuration list for PBXNativeTarget "LoanCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CE8E4A1E6BCAE90067E0E1 /* Debug */,
+				C8CE8E4B1E6BCAE90067E0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CE8E4C1E6BCAE90067E0E1 /* Build configuration list for PBXNativeTarget "LoanCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CE8E4D1E6BCAE90067E0E1 /* Debug */,
+				C8CE8E4E1E6BCAE90067E0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8CE8E111E6BCAE90067E0E1 /* Project object */;
+}
