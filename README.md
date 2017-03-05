@@ -1,4 +1,4 @@
 <p align="center" >
-  <img src="https://github.com/augsun/LoanCalc/blob/master/JXLoanCalc.gif" alt="JXLoanCalc" title="jxLoanCalc">
+  <img src="https://raw.githubusercontent.com/augsun/Resources/master/LoanCalc/JXLoanCalc.gif" alt="JXLoanCalc" title="jxLoanCalc">
 </p>
 
