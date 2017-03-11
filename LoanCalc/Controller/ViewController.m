@@ -43,6 +43,8 @@ static NSString *const kCellID = @"kCellID";
 @property (nonatomic, assign) NSInteger months;
 @property (nonatomic, assign) CGFloat interestRate;
 
+- (IBAction)rightRefreshItemClick:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -210,6 +212,14 @@ static NSString *const kCellID = @"kCellID";
         self.months = years * 12 + months;
         [self refreshUI];
     }];
+}
+
+- (IBAction)rightRefreshItemClick:(id)sender {
+    [self.view endEditing:YES];
+    self.amountTextField.text = nil;
+    self.interestRateTextField.text = nil;
+    self.months = 0;
+    [self refreshUI];
 }
 
 @end

@@ -71,6 +71,9 @@
 - (void)showWithOK:(void (^)(NSInteger, NSInteger))ok {
     self.okBlock = ok;
     
+    [self.pickerView selectRow:self.years inComponent:0 animated:YES];
+    [self.pickerView selectRow:self.months inComponent:1 animated:YES];
+    
     [self.pickerView reloadAllComponents];
     
     self.frame = [UIScreen mainScreen].bounds;

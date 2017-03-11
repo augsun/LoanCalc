@@ -406,7 +406,14 @@
                             <constraint firstItem="Zff-Yi-tOe" firstAttribute="leading" secondItem="3fx-yW-THz" secondAttribute="leading" id="x3d-b5-fBX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="LoanCalc ©2017 CoderSun" id="ZtO-RT-qzL"/>
+                    <navigationItem key="navigationItem" title="LoanCalc ©2017 CoderSun" id="ZtO-RT-qzL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="uVN-3r-TYp">
+                            <color key="tintColor" red="0.94901960784313721" green="0.75294117647058822" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="rightRefreshItemClick:" destination="Vyg-cI-DWC" id="xeY-Uv-eEt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="amountTextField" destination="fSL-eT-SXY" id="UGn-nO-2SF"/>
                         <outlet property="dueTimeLabel" destination="cUs-P7-N6h" id="Sj5-OS-3cT"/>
