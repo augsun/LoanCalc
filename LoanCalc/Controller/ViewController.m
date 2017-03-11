@@ -16,34 +16,29 @@ static NSString *const kCellID = @"kCellID";
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UITextField *amountTextField;
+@property (weak, nonatomic) IBOutlet UILabel *dueTimeLabel;
 @property (weak, nonatomic) IBOutlet UITextField *interestRateTextField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-
-- (IBAction)btnDueTimeClick:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *dueTimeLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *totalPaymentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalInterestLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLoanLabel;
 @property (weak, nonatomic) IBOutlet UILabel *loanMonthsLabel;
 
-- (IBAction)segmentValueChange:(UISegmentedControl *)sender;
-- (IBAction)btnHeaderBgClick:(id)sender;
-
 @property (nonatomic, strong) JXLoanModel *loanModel;
-@property (nonatomic, assign) JXLoanType loanType;
-
-@property (nonatomic, copy) NSString *amountText;
-@property (nonatomic, copy) NSString *dueTimeText;
-@property (nonatomic, copy) NSString *interestRateText;
-
 @property (nonatomic, strong) JXLoanDueTimeSelectView *dueTimeSelectView;
 
 @property (nonatomic, assign) CGFloat amount;
 @property (nonatomic, assign) NSInteger months;
 @property (nonatomic, assign) CGFloat interestRate;
+@property (nonatomic, assign) JXLoanType loanType;
 
-- (IBAction)rightRefreshItemClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *redoItem;
+
+- (IBAction)btnHeaderBgClick:(id)sender;
+- (IBAction)btnDueTimeClick:(id)sender;
+- (IBAction)segmentValueChange:(UISegmentedControl *)sender;
+- (IBAction)rightRedoItemClick:(id)sender;
 
 @end
 
@@ -65,8 +60,6 @@ static NSString *const kCellID = @"kCellID";
                                                object:nil];
     
     self.loanType = JXLoanTypeFixedPayment;
-
-    
 }
 
 - (void)setLoanType:(JXLoanType)loanType {
@@ -163,21 +156,13 @@ static NSString *const kCellID = @"kCellID";
         self.dueTimeLabel.textColor = [UIColor colorWithRed:242/255.f green:192/255.f blue:86/255.f alpha:1.f];
     }
     
-    if (self.amount <= 0) {
+    self.redoItem.enabled = self.amount >0 || self.months > 0 || self.interestRate > 0;
+    
+    if (self.amount <= 0.f || self.months <= 0 || self.interestRate <= 0.f) {
         [self resetUI];
         return;
     }
-    
-    if (self.months <= 0) {
-        [self resetUI];
-        return;
-    }
-    
-    if (self.interestRate <= 0) {
-        [self resetUI];
-        return;
-    }
-    
+
     self.loanModel = [JXLoanModel calcWithType:self.loanType
                                         amount:self.amount
                                        dueTime:self.months
@@ -214,10 +199,12 @@ static NSString *const kCellID = @"kCellID";
     }];
 }
 
-- (IBAction)rightRefreshItemClick:(id)sender {
+- (IBAction)rightRedoItemClick:(id)sender {
     [self.view endEditing:YES];
     self.amountTextField.text = nil;
     self.interestRateTextField.text = nil;
+    self.amount = 0.f;
+    self.interestRate = 0.f;
     self.months = 0;
     [self refreshUI];
 }

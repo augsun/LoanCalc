@@ -8,6 +8,10 @@
 
 #import "JXLoanDueTimeSelectView.h"
 
+static NSString *const kTitleKey = @"title";
+static NSString *const kYearKey = @"year";
+static NSString *const kMonthKey = @"month";
+
 @interface JXLoanDueTimeSelectView () <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
@@ -37,8 +41,8 @@
     NSMutableArray <NSDictionary *> *componentYearsTemp = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i <= 30; i ++) {
         NSMutableDictionary *dicTemp = [[NSMutableDictionary alloc] init];
-        [dicTemp setObject:[NSString stringWithFormat:@"%ld year%@", i, (i == 0 || i == 1) ? @"" : @"s"] forKey:@"title"];
-        [dicTemp setObject:[NSString stringWithFormat:@"%ld", i] forKey:@"year"];
+        [dicTemp setObject:[NSString stringWithFormat:@"%ld year%@", i, (i == 0 || i == 1) ? @"" : @"s"] forKey:kTitleKey];
+        [dicTemp setObject:[NSString stringWithFormat:@"%ld", i] forKey:kYearKey];
         [componentYearsTemp addObject:dicTemp];
     }
     self.componentYears = [componentYearsTemp copy];
@@ -46,8 +50,8 @@
     NSMutableArray <NSDictionary *> *componentMonthsTemp = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 12; i ++) {
         NSMutableDictionary *dicTemp = [[NSMutableDictionary alloc] init];
-        [dicTemp setObject:[NSString stringWithFormat:@"%ld month%@", i, (i == 0 || i == 1) ? @"" : @"s"] forKey:@"title"];
-        [dicTemp setObject:[NSString stringWithFormat:@"%ld", i] forKey:@"month"];
+        [dicTemp setObject:[NSString stringWithFormat:@"%ld month%@", i, (i == 0 || i == 1) ? @"" : @"s"] forKey:kTitleKey];
+        [dicTemp setObject:[NSString stringWithFormat:@"%ld", i] forKey:kMonthKey];
         [componentMonthsTemp addObject:dicTemp];
     }
     self.componentMonths = [componentMonthsTemp copy];
@@ -108,17 +112,17 @@
         rowLabel = [[UILabel alloc] init];
         rowLabel.textAlignment = NSTextAlignmentCenter;
         rowLabel.textColor = [UIColor colorWithRed:242/255.f green:192/255.f blue:86/255.f alpha:1.f];
-        rowLabel.text = component == 0 ? self.componentYears[row][@"title"] : self.componentMonths[row][@"title"];
+        rowLabel.text = component == 0 ? self.componentYears[row][kTitleKey] : self.componentMonths[row][kTitleKey];
     }
     return rowLabel;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     if (component == 0) {
-        self.years = [self.componentYears[row][@"year"] integerValue];
+        self.years = [self.componentYears[row][kYearKey] integerValue];
     }
     else {
-        self.months = [self.componentMonths[row][@"month"] integerValue];
+        self.months = [self.componentMonths[row][kMonthKey] integerValue];
     }
 }
 
