@@ -82,9 +82,9 @@ static NSString *const kCellID = @"kCellID";
                 self.amount = 0;
             }
             else {
-                NSCharacterSet *characterSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet];
+                NSCharacterSet *characterSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789."] invertedSet];
                 self.amountTextField.text = [[textTemp componentsSeparatedByCharactersInSet:characterSet] componentsJoinedByString:@""];
-                self.amount = [self.amountTextField.text integerValue];
+                self.amount = [self.amountTextField.text floatValue];
             }
         }
         

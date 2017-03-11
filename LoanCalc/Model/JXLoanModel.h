@@ -54,7 +54,7 @@ typedef NS_ENUM(NSUInteger, JXLoanType) {
 // amount(10k)
 // dueTime(month)
 // interestRate(%)
-+ (JXLoanModel *)calcWithType:(JXLoanType)type amount:(NSInteger)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate;
++ (JXLoanModel *)calcWithType:(JXLoanType)type amount:(CGFloat)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate;
 
 @end
 

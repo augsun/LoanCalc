@@ -71,7 +71,7 @@
     _totalPaymentString = [self decimalStyle:totalPayment];
 }
 
-+ (JXLoanModel *)calcWithType:(JXLoanType)type amount:(NSInteger)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate {
++ (JXLoanModel *)calcWithType:(JXLoanType)type amount:(CGFloat)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate {
     switch (type) {
         case JXLoanTypeFixedPayment:
         {
@@ -90,8 +90,8 @@
     }
 }
 
-+ (JXLoanModel *)calcFixedPaymentWithAmount:(NSInteger)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate {
-    NSInteger totalLoan = amount * 10000;
++ (JXLoanModel *)calcFixedPaymentWithAmount:(CGFloat)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate {
+    CGFloat totalLoan = amount * 10000;
     NSInteger loanMonths = dueTime;
     CGFloat monthlyRate = interestRate / 12.f / 100.f;
     CGFloat pow0 = pow(1 + monthlyRate, loanMonths);
@@ -128,8 +128,8 @@
     return loanModel;
 }
 
-+ (JXLoanModel *)calcFixedBasisWithAmount:(NSInteger)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate {
-    NSInteger totalLoan = amount * 10000;
++ (JXLoanModel *)calcFixedBasisWithAmount:(CGFloat)amount dueTime:(NSInteger)dueTime interestRate:(CGFloat)interestRate {
+    CGFloat totalLoan = amount * 10000;
     NSInteger loanMonths = dueTime;
     CGFloat monthlyRate = interestRate / 12.f / 100.f;
     CGFloat totalInterest = (loanMonths + 1) * totalLoan * monthlyRate / 2;

@@ -35,7 +35,7 @@
     _months = 0;
     
     NSMutableArray <NSDictionary *> *componentYearsTemp = [[NSMutableArray alloc] init];
-    for (NSInteger i = 0; i < 30; i ++) {
+    for (NSInteger i = 0; i <= 30; i ++) {
         NSMutableDictionary *dicTemp = [[NSMutableDictionary alloc] init];
         [dicTemp setObject:[NSString stringWithFormat:@"%ld year%@", i, (i == 0 || i == 1) ? @"" : @"s"] forKey:@"title"];
         [dicTemp setObject:[NSString stringWithFormat:@"%ld", i] forKey:@"year"];
